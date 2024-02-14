@@ -1,0 +1,21 @@
+{
+  "name": "newtestdeploy",
+  "version": "1.0.0",
+  "description": "Restarted at 1400. Test Deploy second for today.",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "gitignore": "^0.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
