@@ -5,16 +5,18 @@ const port = process.env.PORT || 5000
 
 const app = express()
 
+//middleware
 app.set("view engine", "ejs")
 
-/*app.get('/views', (req,res)=>{res.render("index")})*/
-app.get('/', (req,res)=>{res.render("index")})
+// Routes
+app.get('/', (req,res)=>{res.render("index", {text:"World"})})
 app.get('/about', (req,res)=>{res.render("about")})
+app.get('/info', (req,res)=>{res.render("info")})
+
 
 
 
 
 //app running notiification
-
 app.listen(port, ()=>console.log(`Server started on port ${port}`))
 
