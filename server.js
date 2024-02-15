@@ -11,7 +11,7 @@ app.set("view engine", "ejs")
 // Routes
 app.get('/', (req,res)=>{res.render("index", {text:"World"})})
 app.get('/about', (req,res)=>{res.render("about")})
-app.get('/info', (req,res)=>{res.render("info")})
+app.get('/info', (req,res)=>{res.render("info", {firstName: "Your Name" })})
 
 
 
