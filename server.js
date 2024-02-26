@@ -5,15 +5,16 @@ const port = process.env.PORT || 5000
 
 const app = express()
 
-//middleware
+//view engine
 app.set("view engine", "ejs")
 
+//static files
 app.use(express.static(__dirname+ '/public'))
 
 // Routes
 app.get('/', (req,res)=>{res.render("index", {text:"World"})})
 app.get('/about', (req,res)=>{res.render("about")})
-app.get('/info', (req,res)=>{res.render("info", {firstName: "Your Name" })})
+app.get('/info', (req,res)=>{res.render("info", {firstName: "Enter Your Name" })})
 
 
 

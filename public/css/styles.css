@@ -1,10 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-body{
-    background-color: rgb(238, 233, 227);
-    font-family: "Fredoka", sans-serif ;
-    color:rgb(246, 102, 6);
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
 }
 
-h3{
-    color:rgb(29, 27, 27);
+body{
+    font-family: "Fredoka", sans-serif ;
+    font-size: 16px;
+    line-height: 1.5;
+    /*font-family: -apple-system, sans-serif;*/
+    color:rgb(246, 102, 6);
+    background-color: rgb(238, 233, 227);
+
+    
+}
+
+.container{
+    max-width: 960px;
+    margin: 100px auto;
+    padding:10px;
+    /*framework*/
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:5px;
+    border: blueviolet 2px solid;
+}
+
+.container>div{
+    background: gray;
+}
+a{
+    color:rgb(245, 5, 181);
 }
