@@ -8,16 +8,26 @@
 </head>
 <body>
     <div class="container">
-        <div><h1>Info : Form</h1></div>
-        <div>
-            <form action="/users" method="POST">
-                <label for="">First Name
-                    <input type="text" name="firstName" value="<%=locals.firstName%>"/>
-                </label>
-                <button type="Submit">Submit</button>
-        
-            </form>
-            <div>
+        <div class="container_left_up">
+            <div class="one">
+                <h1>Info |</h1>
+            </div>
+            <div class="two">
+                <h1> Form</h1>
+            </div>
+        </div>
+        <div class="container_right_down">
+            <div class="three">
+                <form action="/users" method="POST">
+                    <label for="">First Name
+                        <input type="text" name="firstName" value="<%=locals.firstName%>"/>
+                    </label>
+                    <button type="Submit">Submit</button>
+            
+                </form>
+            </div>
+            
+            <div class="four">
                 <a href="/">Back</a>
             </div>
         </div>
