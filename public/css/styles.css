@@ -12,7 +12,10 @@ body{
     line-height: 1.5;
     /*font-family: -apple-system, sans-serif;*/
     color:rgb(246, 102, 6);
-    background-color: rgb(233, 227, 221);
+    /*background-color: rgb(231, 231, 234);*/
+    background: rgb(255,255,255);
+    background: linear-gradient(198deg, rgba(255,255,255,1) 0%, rgba(228, 232, 232, 0.898) 57%); 
+    
     height: 100vh;
     display:grid;
 }
@@ -20,43 +23,92 @@ body{
 .container{
     max-width: 70vw;
     min-width: 70vw;
-    height:60vh;
+    min-height:50vh;
+    max-height: max-content;
     margin: auto;
     padding:0px;
+    background-color: #fff;
+
+    
+    box-shadow: 0 0 1rem 0.25rem rgba(222, 238, 247, 0.759),
+    0 0 1rem 0.405rem rgba(212, 213, 214, 0.779);
     
     /*fwork*/
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:5px;
     
-    border: rgba(137, 43, 226, 0.413) 2px solid;
+    /*border: rgba(137, 43, 226, 0.413) 2px solid;*/
 }
 
 .container>div{
-    background: rgb(90, 104, 127);
-    border:rgb(160, 159, 159) 5px dashed;
+    background: #fff;
+    /*border:rgba(228, 224, 229, 0.246) 0.403rem solid;*/
+    /*border-radius: 9px;*/
+    height: auto;
+    font-size: 0.999rem;
     /*fwork*/
     display:grid;
     grid-template-rows: 1fr 1fr;
     gap:0.6rem;
+    align-items: center;
+    justify-items: center;
     
 }
 /*panel-grupp*/
 .container_left_up{
-    color: rgb(245, 177, 5);
+    color: rgb(121, 121, 120);
 
 }
 
 .container_left_up>div{
-    border: rgb(180, 239, 4) 3px solid;
+    border: none;
 }
 
+
+.logo_left_up{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.two>h3{
+    color: rgba(89, 89, 86, 0.617);
+    border-radius: 52px;
+    border: 0.8px rgba(1, 1, 15, 0.217) solid;
+    padding: 0.4rem;
+    margin: 0.2rem;
+    font-family: system-ui, sans-serif;
+    text-align: center;
+
+}
 .container_right_down{
-    border: whitesmoke 3px solid;
+    color: rgb(121, 120, 120);
 }
 .container_right_down>div{
-    border: rgb(5, 230, 237) 3px solid;
+    /*border: rgb(5, 230, 237) 2px solid;*/
+    align-self:center;
+    text-align: center;
 }
+.three{
+    font-size: 1rem;
+}
+
+.four{
+    font-size: 1.62rem;
+    color: chocolate;
+}
+.four>a{
+    border-radius: 52px;
+    border: 0.8px rgba(1, 1, 15, 0.217) solid;
+    padding: 0.4rem;
+    margin: 0.3rem;
+    text-decoration: none;
+    font-family: system-ui, sans-serif;
+    font-size: smaller;
+    text-align: center;
+}
+
 
 /*solos*/
 a{
