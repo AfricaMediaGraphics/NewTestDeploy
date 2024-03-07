@@ -15,6 +15,7 @@ app.use(express.static(__dirname+ '/public'))
 app.get('/', (req,res)=>{res.render("index", {text:"Early Stage. Syndicated. Public Exits. NBO."})})
 app.get('/about', (req,res)=>{res.render("about")})
 app.get('/info', (req,res)=>{res.render("info", {firstName: "Enter Your Name" })})
+app.get('/contact', (req,res)=>{res.render("contact")})
 
 
 
