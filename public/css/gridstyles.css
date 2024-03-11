@@ -46,7 +46,7 @@ body{
     /*background-color: rgba(197, 194, 194, 0.452);*/
     background: rgba(220, 218, 218, 0);
     border-radius: 0.8rem;
-    box-shadow: 0 0 0 -2px gainsboro;
+    box-shadow: 0 0 2px0 -2px gainsboro;
 
     margin-top:0.5rem;
     margin-bottom: 0.5rem;
@@ -104,6 +104,9 @@ body{
     justify-items: center;
     align-items: center;
 }
+.item-footer{
+    background-color: black;
+}
 /*flex zone*/
 .flx{
     /*background-color: rgb(246, 242, 241);*/
@@ -122,6 +125,16 @@ body{
     background-position: center;
     height:14rem;
     width: 14rem;
+}
+
+.item-main-right-flex{
+    color:black;
+    display: flex;
+    align-items: center;
+    padding-left:3rem;
+
+    font-size: 2.1rem;
+    
 }
 
 .item-dock-flex{
@@ -152,8 +165,12 @@ body{
     background-color: rgb(250, 248, 248);
     height: 3rem;
     width: 86%;
+    margin-bottom: 0.3rem;
+    margin-top: -0.3rem;
     border-radius: 3rem;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .item-dock-flex{
@@ -164,22 +181,29 @@ body{
     height: 5rem;
     width: 5rem;
     border-radius: 1rem;
-    color:gray;
-    background-color: rgba(246, 245, 243, 0.518);
+    color:rgb(255, 253, 253);
+    background-color: rgb(255, 3, 142);
     box-shadow: -1px 2px 1px -1px rgba(128, 128, 128, 0.265);
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .item-footer-flex{
     display:flex;
+    height: 3rem;
+    border: 2px solid white;
     gap:2rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    color:gray;
+    color:rgb(216, 213, 213);
+    background-color: black;
+
+    border:rgba(238, 229, 238, 0.236) 0.75px solid;
+    font-family: system-ui, sans-serif;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
 .privacyNotice, .copyrightNotice{
@@ -187,12 +211,7 @@ body{
     width: fit-content;
 }
 
-.item-footer-flex{
-    border:rgba(247, 3, 239, 0.112) 2px solid;
-    font-family: system-ui, sans-serif;
-    flex-wrap: wrap;
-    align-content: space-around;
-}
+
 
 .item-footer-flex>*{
     height: fit-content;
@@ -200,6 +219,7 @@ body{
 
 /*media qs*/
 @media(max-width:475px){
+   
     .container{
       color: aqua;
       max-width: fit-content;
@@ -219,9 +239,22 @@ body{
         width: 12rem;
         padding: 0.5rem;
     }
+
+    .item-main-right-flex{
+        color:black;
+        display: flex;
+        align-items: center;
+        padding-left:2rem;
+        font-size: 1.61rem;
+
+    }
+    .item-dock-flex{
+        background: none;
+    }
+
     .icon{
-        height: 3.2rem;
-        width: 3.2rem;
+        height: 3.5rem;
+        width: 3.5rem;
         border-radius: 50%;
     }
 }

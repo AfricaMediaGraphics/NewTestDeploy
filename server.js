@@ -21,4 +21,3 @@ app.get('/contact', (req,res)=>{res.render("contact")})
 
 //app running notiification
 app.listen(port, ()=>console.log(`Server started on port ${port}`))
-
