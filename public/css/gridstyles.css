@@ -10,8 +10,10 @@ body{
     font-size: 16px;
     line-height: 1.5;
     color:rgb(206, 6, 246);
-    background: linear-gradient(198deg, rgba(255,255,255,1) 0%, rgba(228, 232, 232, 0.898) 57%); 
-    background: rgba(21, 1, 1, 0.865);
+    
+    /*background: linear-gradient(198deg, rgba(255,255,255,1) 0%, rgba(228, 232, 232, 0.898) 57%); */
+    /*background: rgba(198, 196, 196, 0.865);*/
+    background: rgba(138, 138, 138, 0.51);
 
     height:100vh;
     min-height: 100vh;
@@ -27,12 +29,12 @@ body{
 .container{
     object-fit: scale-down;
     height: 99%;    
-    width:950px;
+    width:1150px;
     justify-self: center;
     align-self: center;
         
     color:aliceblue;
-    background-color:#a12303b0;
+    background-color:#dedede7e;
 
     display:grid;
     grid-template-rows: 1fr 3fr 1fr 1fr;
@@ -40,8 +42,9 @@ body{
 }
 
 .item{
-    background-color: brown;
-    
+    /*background-color: rgba(197, 194, 194, 0.452);*/
+    background: rgba(254, 254, 254, 0.51);
+
     margin-top:1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
@@ -61,7 +64,7 @@ body{
 }
 
 .item-main>div{
-    border: 1px solid salmon; 
+    border: 1px solid rgba(250, 128, 114, 0.17); 
     height: 24rem;
     width: 24rem;
 }
@@ -72,6 +75,7 @@ body{
     display:grid;
     justify-items: center;
     align-items: center;
+
 }
 
 .item-main-right{
@@ -83,10 +87,21 @@ body{
 }
 /*flex zone*/
 .flx{
-    background-color: salmon;
+    /*background-color: rgb(246, 242, 241);*/
+    background-color: white;
     border-radius: 15px;
     width: 95%;
     height: 90%;
+}
+
+.item-main-left-flex{
+    background-color: white;
+    background-image:url("../images/TENEX_LOGO-small copy.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:14rem;
+    width: 14rem;
 }
 
 .item-dock-flex{
@@ -110,7 +125,6 @@ body{
     background-color: rgb(240, 223, 200);
     height: 4.5rem;
     width:4.5rem;
-   
 }
 
 .item-menu-flex-secondLine{
@@ -120,12 +134,15 @@ body{
     
 }
 
+.item-dock-flex{
+    gap:3rem;
+}
 
 .icon{
     height: 5rem;
     width: 5rem;
     border-radius: 1rem;
-    background-color: rgb(218, 197, 171);
+    background-color: rgb(234, 229, 222);
 }
 
 .item-footer-flex{
@@ -142,7 +159,16 @@ body{
     width: fit-content;
 }
 
+.item-footer-flex{
+    border:black 2px solid;
+    font-family: system-ui, sans-serif;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
 
+.item-footer-flex>*{
+    height: fit-content;
+}
 
 /*media qs*/
 @media(max-width:475px){
@@ -157,12 +183,18 @@ body{
         max-width:100vw;
     }
     .item-main>div{
-        height:14rem;
+        height:13rem;
         
+    }
+    .item-main-left-flex{
+        height: 12rem;
+        width: 12rem;
+        padding: 0.5rem;
     }
     .icon{
         height: 3.2rem;
         width: 3.2rem;
+        border-radius: 50%;
     }
 }
 
