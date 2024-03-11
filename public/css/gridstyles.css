@@ -34,7 +34,8 @@ body{
     align-self: center;
         
     color:aliceblue;
-    background-color:#dedede7e;
+    background-color:#ffffffbc;
+    border-radius: 1rem;
 
     display:grid;
     grid-template-rows: 1fr 3fr 1fr 1fr;
@@ -43,10 +44,12 @@ body{
 
 .item{
     /*background-color: rgba(197, 194, 194, 0.452);*/
-    background: rgba(254, 254, 254, 0.51);
+    background: rgba(220, 218, 218, 0);
+    border-radius: 0.8rem;
+    box-shadow: 0 0 0 -2px gainsboro;
 
-    margin-top:1rem;
-    margin-bottom: 1rem;
+    margin-top:0.5rem;
+    margin-bottom: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
     display:grid;
@@ -54,7 +57,23 @@ body{
     align-items: center;
    
 }
+.item-menu{
+    border:none;
 
+.item-menu-flex{
+    border: none; 
+}
+
+.item-menu-flex-logo{
+    background-color: goldenrod;
+    background: url(../images/TENEX-device.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: lighten;
+}
+
+}
 .item-main{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -94,6 +113,7 @@ body{
     height: 90%;
 }
 
+
 .item-main-left-flex{
     background-color: white;
     background-image:url("../images/TENEX_LOGO-small copy.png");
@@ -123,14 +143,16 @@ body{
 
 .item-menu-flex-logo{
     background-color: rgb(240, 223, 200);
+    border: none;
     height: 4.5rem;
     width:4.5rem;
 }
 
 .item-menu-flex-secondLine{
-    background-color: rgb(244, 221, 192);
+    background-color: rgb(250, 248, 248);
     height: 3rem;
     width: 86%;
+    border-radius: 3rem;
     
 }
 
@@ -142,7 +164,13 @@ body{
     height: 5rem;
     width: 5rem;
     border-radius: 1rem;
-    background-color: rgb(234, 229, 222);
+    color:gray;
+    background-color: rgba(246, 245, 243, 0.518);
+    box-shadow: -1px 2px 1px -1px rgba(128, 128, 128, 0.265);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .item-footer-flex{
@@ -160,7 +188,7 @@ body{
 }
 
 .item-footer-flex{
-    border:black 2px solid;
+    border:rgba(247, 3, 239, 0.112) 2px solid;
     font-family: system-ui, sans-serif;
     flex-wrap: wrap;
     align-content: space-around;
