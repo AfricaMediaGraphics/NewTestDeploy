@@ -24,7 +24,11 @@ body{
     grid-template-columns: 1fr;
     justify-items: center;
 
+    position:relative;
 }
+
+
+
 
 .container{
     object-fit: scale-down;
@@ -131,7 +135,7 @@ body{
     background-position: center;
     height:16rem;
     width: 16rem;
-    box-shadow: 0 0 0 3px rgb(255, 255, 255), 0 0 4px 1.3px rgba(225, 223, 223, 0.346);
+    box-shadow: 0 0 10px 1px rgb(224, 223, 223, 0.6);
 
 }
 
@@ -142,6 +146,8 @@ body{
     padding-left:3rem;
     font-size: 2.1rem;
     border: 0.32px solid rgba(246, 240, 243, 0.284);
+    box-shadow: 0 0 7px 1px rgb(224, 223, 223, 0.6);
+
 }
 
 .item-dock-flex{
