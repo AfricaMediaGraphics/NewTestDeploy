@@ -55,6 +55,10 @@ a{
     justify-items: center;
     
 }
+/*menu grupp*/
+.item-menu-flex-logo{
+    background-image: url();
+}
 /*panel-grupp*/
 .container_left_up{
     color: rgb(121, 121, 120);

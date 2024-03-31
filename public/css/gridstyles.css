@@ -27,9 +27,6 @@ body{
     position:relative;
 }
 
-
-
-
 .container{
     object-fit: scale-down;
     height: 99%;    
@@ -51,7 +48,7 @@ body{
     /*background-color: rgba(197, 194, 194, 0.452);*/
     background: rgba(220, 218, 218, 0);
     border-radius: 0.8rem;
-    box-shadow: 0 0 2px0 -2px gainsboro;
+    box-shadow: 0 0 2px0 -2px rgb(225, 224, 224);
 
     margin-top:0.5rem;
     margin-bottom: 0.5rem;
@@ -71,7 +68,7 @@ body{
 }
 
 .item-menu-flex-logo{
-    background-color: goldenrod;
+    background-color: rgb(255, 255, 255);
     background: url(../images/TENEX-device.png);
     background-size:contain;
     background-repeat: no-repeat;
@@ -232,7 +229,7 @@ body{
 @media(max-width:475px){
     .body{
         position:relative;
-        width: 330px;
+        width: 100vw;
         height: 100%;
     }
     
