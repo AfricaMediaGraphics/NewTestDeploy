@@ -13,16 +13,41 @@
    <div class="content">
         <div class="item">
                 <h1>Connect your<br>policies here</h1>
-            <form action="/">
+            <form class="form" method="POST" action="info">
+                
                 <label for="">Email</label>
-                <input type="email">
+                <input name="email" type="email" placeholder="your@email.com" required>
                 <label for="">Renew date</label>
-                <input type="date">
-                <button>Sign Me Up</button>
+                <input class="renewDate" name="renewDate" type="date" value="2024-01-01" required>
+                <button type="submit">Sign Me Up</button>
             </form>
         </div>
       
    </div>
    <div class="footer"><h2>2024™</h2></div>
+   <script>
+    
+        const formEl = document.querySelector('.form', event);   
+        const baseURL =  "http://127.0.0.1:5000/about"
+
+        formEl.addEventListener('submit', async event =>{
+            event.preventDefault();
+
+        const formData = new FormData(formEl);
+        const data = Object.fromEntries(formData);
+            
+        
+            await fetch(baseURL, {
+            method:'POST',
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+
+        
+    })
+
+</script>
 </body>
 </html>

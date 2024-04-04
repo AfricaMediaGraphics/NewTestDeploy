@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -124,8 +124,8 @@ p {
 
 .item>h1 {
     width: fit-content;
-    font-family: "Manrope", sans-serif;
-    font-weight: 800;
+    font-family: "Outfit","Manrope", sans-serif;
+    font-weight: 700;
     font-size: 44px;
     font-stretch: ultra-condensed;
     line-height: 1.2;
@@ -175,7 +175,6 @@ input {
     font-size: 18px;
     text-decoration: none;
     outline: none;
-    cursor: copy;
     text-indent: 5%;
     border: none;
     box-shadow: 0 1px 2px 1px rgba(97, 96, 96, 0.622);
@@ -273,7 +272,7 @@ button {
     }
 
     .item>h1 {
-        font-family: "Poppins", sans-serif;
+        font-family: "Outfit","Poppins", sans-serif;
         font-weight: 500;
     }
 
@@ -289,7 +288,7 @@ button {
     }
 
     .item>h1 {
-        font-family: "Poppins", sans-serif;
+        font-family: "Outfit","Poppins", sans-serif;
         font-weight: 500;
         font-size: 44px;
     }
@@ -309,8 +308,8 @@ button {
     }
 
     .item>h1 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
+        font-family: "Outfit","Poppins", sans-serif;
+        font-weight: 700;
         font-size: 64px;
         color:  linear-gradient(to right,
         #833ab4, #fd1d1d, #fcb045);;
