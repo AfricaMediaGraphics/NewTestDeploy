@@ -132,6 +132,10 @@ p {
     align-self: center;
 }
 
+span{
+    text-decoration: underline wavy rgb(0, 187, 255) 3.5px;
+
+}
 
 
 /*Form styles*/

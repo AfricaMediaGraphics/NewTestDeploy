@@ -12,7 +12,7 @@
    <div class="header"><h1>beema</h1></div>
    <div class="content">
         <div class="item">
-                <h1>Connect your<br>policies here</h1>
+                <h1>Connect all your<br>policies here</h1>
             <form class="form" method="POST" action="info">
                 
                 <label for="">Email</label>
@@ -33,10 +33,9 @@
         formEl.addEventListener('submit', async event =>{
             event.preventDefault();
 
-        const formData = new FormData(formEl);
-        const data = Object.fromEntries(formData);
+            const formData = new FormData(formEl);
+            const data = Object.fromEntries(formData);
             
-        
             await fetch(baseURL, {
             method:'POST',
             headers:{
@@ -44,8 +43,6 @@
             },
             body: JSON.stringify(data)
         })
-
-        
     })
 
 </script>
