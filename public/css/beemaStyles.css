@@ -85,6 +85,7 @@ p {
 .footer>h2 {
     padding: 0;
     margin-top: 0;
+    font-family: "Outfit", sans-serif;
 }
 
 .content {
@@ -132,10 +133,7 @@ p {
     align-self: center;
 }
 
-span{
-    text-decoration: underline wavy rgb(0, 187, 255) 3.5px;
 
-}
 
 
 /*Form styles*/
@@ -278,6 +276,7 @@ button {
     .item>h1 {
         font-family: "Outfit","Poppins", sans-serif;
         font-weight: 500;
+       
     }
 
     .header {
@@ -304,7 +303,7 @@ button {
 
 }
 
-
+/*wide screen*/
 @media (orientation: landscape) and (min-width: 1450px) {
     .item {
         flex-direction: row;
