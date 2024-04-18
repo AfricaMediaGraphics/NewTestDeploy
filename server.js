@@ -24,6 +24,7 @@ app.get('/',(req,res)=>{res.render("index", {text:"Early Stage. Syndicated. Publ
 app.get('/about', alive, (req,res)=>{res.render("beema")})
 app.get('/info', (req,res)=>{res.render("info", {firstName: "Enter Your Name" })})
 app.get('/contact', (req,res)=>{res.render("contact")})
+app.get('/groupConnect', (req,res)=>{res.render("groupConnect")})
 
 
 app.post('/about', (req,res)=>{
