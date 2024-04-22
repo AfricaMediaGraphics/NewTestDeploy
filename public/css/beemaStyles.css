@@ -221,7 +221,6 @@ button {
     }
 
     form {
-        border: 0.2px solid rgba(251, 4, 135, 0.665);
         width: 95%;
         margin-bottom: 3.5%;
 
@@ -300,7 +299,7 @@ button {
         width: 90%;
         height: 55%;
     }
-
+   
 }
 
 /*wide screen*/
@@ -308,6 +307,7 @@ button {
     .item {
         flex-direction: row;
         height: 70%;
+        
     }
 
     .item>h1 {
@@ -321,4 +321,39 @@ button {
         background:  linear-gradient(to right,
         #833ab4, #b559da, #d383f3);
     }
+}
+
+/*ipad*/
+@media (orientation: landscape) and (width: 1366px) {
+    .item {
+        flex-direction: row;
+        height: 70%;
+    }
+
+    form{
+        height: 65%;
+        width:50%;        
+    }
+    input{
+        width: 90%;
+    }
+}
+
+@media (orientation: portrait) and (width: 1024px) {
+    .item {
+        flex-direction: row;
+        height: 65%;
+        width: 65%;
+    }
+
+    form{
+        height: 50%;
+        width:60%;        
+    }
+    input{
+        width: 90%;
+    }
+
+    
+
 }
