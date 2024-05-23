@@ -33,8 +33,6 @@ app.get('/groupConnect', (req,res)=>{res.render("groupConnect")})
 
 
 
-
-
 //Post Routes
 app.post('/about', (req,res)=>{
   res.render("about", {text:"Your account has been created. Now click select group"})
