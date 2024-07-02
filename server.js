@@ -25,7 +25,7 @@ function alive(req,res,next){console.log("Customer just walked in"); next()}
 
 
 //Get Routes
-app.get('/',(req,res)=>{res.render("index", {text:"Early Stage. Syndicated. Public Exits. NBO."})})
+app.get('/',(req,res)=>{res.render("index", {text:"Lets book buy and play, together."})})
 app.get('/about', alive, (req,res)=>{res.render("beema")})
 app.get('/info', (req,res)=>{res.render("info", {firstName: "Enter Your Name" })})
 app.get('/contact', (req,res)=>{res.render("contact")})
