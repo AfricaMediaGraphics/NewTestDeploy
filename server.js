@@ -51,10 +51,9 @@ app.post('/about', (req,res)=>{
       try{
         const user = await User.create({
            name:frontName, 
-           age:"38",
+           age:"18",
            email:frontEmail,
-           city:"Namibia",
-           hobbies:["Alliance", "JDM"]
+           hobbies:["Jubilee"]
         })
       
         app.get('/', (req,res)=>{res.send("you are now registered as: " + user.name+" "+"and email: " + user.email)})
