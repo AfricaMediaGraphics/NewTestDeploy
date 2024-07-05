@@ -35,7 +35,7 @@ app.get('/groupConnect', (req,res)=>{res.render("groupConnect")})
 
 //Post Routes
 app.post('/about', (req,res)=>{
-  res.render("contact", {text:"Your account has been created. Now click select group"})
+  res.render("contact", {text:"Hello" + " " + req.body.email + " " + "Your account has been created. Now select group."})
     console.log(req.body.email + " "+ "renews on" + " "+req.body.renewDate)
   
     //db code***
