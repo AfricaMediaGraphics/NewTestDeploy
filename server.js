@@ -28,14 +28,15 @@ function alive(req,res,next){console.log("Customer just walked in"); next()}
 app.get('/',(req,res)=>{res.render("index", {text:"Lets book buy and play, together."})})
 app.get('/about', alive, (req,res)=>{res.render("beema")})
 app.get('/info', (req,res)=>{res.render("info", {firstName: "Enter Your Name" })})
-app.get('/contact', (req,res)=>{res.render("contact")})
+//app.get('/contact', (req,res)=>{res.render("contact")})
+app.get('/contact', (req,res)=>{res.render("contact", {text:req.body.email})})
 app.get('/groupConnect', (req,res)=>{res.render("groupConnect")})
 
 
 
 //Post Routes
 app.post('/about', (req,res)=>{
-  res.render("contact", {text:"Hello" + " " + req.body.email + " " + "Your account has been created. Now select group."})
+  res.render("contact", {text:"Hello" + " " + req.body.email + " " + "Your account has been created. Now select a group."})
     console.log(req.body.email + " "+ "renews on" + " "+req.body.renewDate)
   
     //db code***
