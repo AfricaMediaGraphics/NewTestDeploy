@@ -135,10 +135,10 @@ p {
     height: 50vh;
     font-family: "Manrope", "Trebuchet MS", sans-serif;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 2rem;
     font-stretch: ultra-condensed;
     line-height: 1.2;
-    color: #2e2d2dea;
+    color: #ff5500ea;
     align-self: center;
     margin-right: 6px;
 
@@ -259,6 +259,7 @@ h4 {
         border-radius: 13px;
         color:#fd1d1d;
         font-weight:lighter;
+        font-size: 0.5rem;
     }
 
     .groups {
@@ -319,6 +320,7 @@ h4 {
     .item>h1 {
         font-family: "Poppins", sans-serif;
         font-weight: 400;
+        font-size: 1rem;
         color:crimson;
         position: initial;
         width: 10vw;
@@ -348,6 +350,7 @@ h4 {
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         font-size: 34px;
+        font-size: 1rem;
         height: 5%;
         width: 75%;
         align-self: center;
