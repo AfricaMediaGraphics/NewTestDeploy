@@ -215,9 +215,9 @@ a {
     font-size: large;
 
     background-image: url(../images/blurBackground.png);
-    background-position:center;
+    background-position:center center;
     background-size:cover;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-blend-mode:multiply;
 
 }
@@ -252,6 +252,46 @@ h4 {
     background-repeat: no-repeat;
 }
 
+.groups>div:nth-child(3){
+    background: rgba(76, 247, 3, 0.765);
+    background-image: url(/images/zeroEmissions.png);
+    background-position:center;
+    background-size:cover;
+    background-blend-mode:luminosity;
+    background-repeat: no-repeat;
+}
+.groups>div:nth-child(4){
+    background: rgb(255, 255, 255);
+    background-image: url(/images/droidconTarget.png);
+    background-position:center;
+    background-size:cover;
+    background-blend-mode:multiply;
+    background-repeat: no-repeat;
+}
+.groups>div:nth-child(5){
+    background: rgba(164, 164, 164, 0.354);
+    background-image: url(/images/kwaniCurryCover.png);
+    background-position:center;
+    background-size:cover;
+    background-blend-mode:lighten;
+    background-repeat: no-repeat;
+}
+.groups>div:nth-child(6){
+    background: rgba(246, 247, 247, 0.838);
+    background-image: url(/images/bmwbadgesGroup.png);
+    background-position:center;
+    background-size:cover;
+    background-blend-mode:luminosity;
+    background-repeat: no-repeat;
+}
+.groups>div:nth-child(7){
+    background: rgba(246, 247, 247, 0.838);
+    background-image: url(/images/amcham.png);
+    background-position:center;
+    background-size:cover;
+    background-blend-mode:darken;
+    background-repeat: no-repeat;
+}
 /*@media*/
 
 @media (max-width: 430px) {
