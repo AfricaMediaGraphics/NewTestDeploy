@@ -31,10 +31,11 @@ app.get('/info', (req,res)=>{res.render("info", {firstName: "Enter Your Name" })
 //app.get('/contact', (req,res)=>{res.render("contact")})
 app.get('/contact', (req,res)=>{res.render("contact", {text:req.body.email})})
 app.get('/groupConnect', (req,res)=>{res.render("groupConnect")})
-
+app.get('/book', (req,res)=>{res.render("book")})
 
 
 //Post Routes
+//Post About
 app.post('/about', (req,res)=>{
   res.render("contact", {text:"Hello" + " " + req.body.email + " " + "Your account has been created. Now select a group."})
     console.log(req.body.email + " "+ "renews on" + " "+req.body.renewDate)
@@ -64,6 +65,18 @@ app.post('/about', (req,res)=>{
       }
 
       }
+})
+
+//Post groupConnect
+app.post('/groupConnect', (req,res)=>{
+  res.render("contact", {text: req.body.email + " " + "has connected successfully. Please check your @mail inbox."})
+    console.log(req.body.email + " "+ "has joined group")
+  
+    //db code***
+  let frontEmail = req.body.email
+  let frontName = req.body.renewDate
+
+  
 })
 
 
