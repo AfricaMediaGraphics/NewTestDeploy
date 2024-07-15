@@ -13,14 +13,15 @@
    <div class="content">
         <div class="item">
                 <h1>Connect to THIS<br>group here</h1>
-            <form action="/contact">
+            <form method="POST" action="/groupConnect">
                 <label for="">Email</label>
-                <input type="email">
+                <input name="email" type="email" placeholder="your@email.com" required>
                 <label for="">Invite Code</label>
-                <input type="number" placeholder="000 000">
-                <button id="payoutButton">Link Up</button>
+                <input type="number" placeholder="001 000" required>
+                <button type ="submit" id="payoutButton">Link Up</button>
                 <a href="/contact"><h4>Take Me Back to Groups</h4></a>
             </form>
+
         </div>
    </div>
    <div class="footer" id="payoutFooter"><h2>TENEX 2024™</h2></div>
