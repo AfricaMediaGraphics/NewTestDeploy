@@ -213,6 +213,12 @@ a {
     border-radius: 12px;
     box-shadow: none;
     font-size: large;
+
+    background-image: url(../images/censorBlur.png);
+    background-position:center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-blend-mode:multiply;
 }
 
 h4 {
