@@ -20,11 +20,26 @@
     opacity: 90%;
     color: rgba(0, 0, 0, 0.651);
     box-shadow: 0 2px 1px 1px rgba(183, 183, 183, 0.209);
+    display:flex;
+    align-items: center;
+    gap:8px;
 }
 
 
 h1{
     color:rgb(255, 2, 2);
+}
+
+.headerSection{
+    background-color: rgb(206, 248, 248);
+    font-size: smaller;
+    border:none;
+    border-radius: 16px;
+    margin-left:6px;
+    padding:6px;
+    padding-left: 6px;
+    width:80%;
+    height:25%;
 }
 
 .renewalSection{
