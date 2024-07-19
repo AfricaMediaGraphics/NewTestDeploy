@@ -33,8 +33,15 @@ app.get('/contact', (req,res)=>{res.render("contact", {text:req.body.email})})
 app.get('/groupConnect', (req,res)=>{res.render("groupConnect")})
 app.get('/book', (req,res)=>{res.render("book")})
 
+//get Users Routes
+app.get('/renewals', async (req,res)=>{
+  const users = await User.find()
+  res.render("renewals", {users})
+  //res.send(users)
+})
 
-//Post Routes
+
+//POST Routes
 //Post About
 app.post('/about', (req,res)=>{
   res.render("contact", {text:"Hello" + " " + req.body.email + " " + "Your account has been created. Now select a group."})
@@ -47,7 +54,7 @@ app.post('/about', (req,res)=>{
 
   console.log(frontEmail + " for the DB " + frontName)
    
-  //DB Actions
+    //DB Actions***
     run()
     async function run(){
       try{
