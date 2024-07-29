@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+body{
+    background: rgb(250, 247, 243);
+}
 
 .header {
     font-family: "Righteous", sans-serif;
@@ -22,12 +25,12 @@
     box-shadow: 0 2px 1px 1px rgba(183, 183, 183, 0.209);
     display:flex;
     align-items: center;
-    gap:8px;
+    gap:9px;
 }
 
 
 h1{
-    color:rgb(255, 2, 2);
+    color:rgba(255, 2, 2, 0.759);
 }
 
 .headerSection{
@@ -45,7 +48,7 @@ h1{
 .renewalSection{
     font-family:"Outfit", sans-serif ;
     font-size: 12px;
-    color:rgb(47, 46, 46);
+    color:rgb(45, 45, 45);
     overflow:scroll;
     width:98vw;
     height:95vh;
@@ -53,10 +56,10 @@ h1{
 
 ul{
     list-style:none;
-    border:1px solid whitesmoke;
+    border:1px solid rgb(224, 223, 223);
     border-radius:0.2rem;
     display:flex;
-    gap:4px;
+    gap:12px;
     flex-wrap: wrap;
 }
 
@@ -64,7 +67,7 @@ li{
     border-radius:8px;
     margin: 5px auto;
     padding:7px;
-    background:gainsboro;
+    background:rgb(255, 254, 254);
     box-shadow: -1px 1px 4px rgb(213,212,212);
     width: 90%;
 }
