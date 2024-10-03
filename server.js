@@ -76,7 +76,7 @@ app.post('/about', (req,res)=>{
 
 //Post groupConnect
 app.post('/groupConnect', (req,res)=>{
-  res.render("contact", {text: req.body.email + " " + "has connected successfully. Please check your @mail inbox."})
+  res.render("contact", {text: req.body.email + " " + "has connected successfully! Please check your @mail inbox."})
     console.log(req.body.email + " "+ "has joined group")
   
     //db code***
